@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 
 def home( request):
-    return render ( request, 'choco/index.php')
+    return render ( request, 'choco/templates/index.html')
 # Create your views here.
