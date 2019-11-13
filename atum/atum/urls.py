@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from choco.views import home
+from choco.views import home,cadastro_pacote
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path ('home/', home)
+    path ('admin/', admin.site.urls),
+    path ('', home),
+    path ('cadastro_pacote/', cadastro_pacote)
 ]
