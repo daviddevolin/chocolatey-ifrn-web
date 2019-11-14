@@ -1,7 +1,8 @@
 from django.db import models
 
-class pacotes (models.Model):
-    nome = models.CharField( max_length=50)
+class pacote (models.Model):
+    #arquivonuspec
+    id_do_pacote = models.CharField( max_length=50)
     title = models.CharField( max_length=50)
     version = models.IntegerField()
     authors = models.CharField( max_length=50)
@@ -11,6 +12,13 @@ class pacotes (models.Model):
     icon_URL = models.CharField( max_length=50)
     description = models.TextField()
     require_license_acceptance = models.BooleanField()
-    dependêcia = models.CharField( max_length=50)
+    dependencia = models.CharField( max_length=50)
+    #arquivo chocolatey install
+    installer_type = models.CharField( max_length=3)
+    unattended_arguments = models.CharField( max_length=50)
+    URL = models.CharField( max_length=50)
+    URL_64 = models.CharField( max_length=50)
+
+    
     
 # Create your models here.

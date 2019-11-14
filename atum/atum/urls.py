@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from choco.views import home,cadastro_pacote
-
+from choco.views import home
+from choco.views import cadastro_pacote
 urlpatterns = [
     path ('admin/', admin.site.urls),
     path ('', home),
