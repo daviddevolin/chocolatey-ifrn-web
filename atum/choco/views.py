@@ -15,15 +15,15 @@ def cadastro_pacote(request):
         print(pacote.icon_URL)
     
     form = PostForm()
-    pacote = Pacote.object.all()
+    pacotes = Pacote.object.all()
     contexto = {'form': form,
-                'pacotes': pacote}
+                'pacotes': pacotes}
     return render(request, 'choco/templates/cadastro_pacote.html',contexto )
 
 def visualiza_pacote(request):
-    pacote = Pacote.object.all()
+    pacotes = Pacote.object.all()
     
-    contexto = {'pacotes': pacote}
+    contexto = {'pacotes': pacotes}
     
     return render(request, 'lista_pacotes.html', contexto)    
 
