@@ -1,0 +1,48 @@
+
+{% include './header.html' %}
+<div id="subcorpo">
+
+<h2>Lista de pacotes</h2>
+	<table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Título</th>
+            <th scope="col">Version</th>
+            <th scope="col">Authors</th>
+            <th scope="col">Owners</th>
+            <th scope="col">Summary</th>
+            <th scope="col">Project_URL</th>
+            <th scope="col">icon_URL</th>
+            <th scope="col">Description</th>
+            <th scope="col">Require_license_acceptance</th>
+            <th scope="col">Dependencia</th>
+            <th scope="col">Installer_type</th>
+            <th scope="col">unattended_arguments</th>
+            <th scope="col">URL</th>
+            <th scope="col">URL_64</th>
+
+          </tr>
+        </thead>
+        <tbody>
+            
+            <th scope="row"> {{pacote.id_do_pacote}}              
+                <td> {{pacote.title}} </td>
+                <td> {{pacote.version}} </td>
+                <td> {{pacote.authors}} </td>
+                <td> {{pacote.owners}} </td>
+                <td> {{pacote.summary}} </td>
+                <td> {{pacote.project_URL}} </td>
+                <td> {{pacote.icon_URL}} </td>
+                <td> {{pacote.description}} </td>
+                <td> {{pacote.require_license_acceptance}} </td>
+                <td> {{pacote.dependencia}} </td>
+                <td> {{pacote.installer_type}} </td>
+                <td> {{pacote.unattended_arguments}} </td>
+                <td> {{pacote.URL}} </td>
+                <td> {{pacote.URL_64}} </td>
+            </th>
+        </tbody>
+      </table>
+</div>
+{% include './footer.html' %}

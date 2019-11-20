@@ -25,7 +25,11 @@ def visualiza_pacote(request):
     
     contexto = {'pacotes': pacotes}
     
-    return render(request, 'lista_pacotes.html', contexto)    
+    return render(request, 'choco/templates/lista_pacotes.html', contexto)    
 
 # Create your views here.
 
+def listar_detalhes_pacote(request, id_pacote):
+    pacote = Pacote.object.get(id_do_pacote = id_pacote)
+    contexto = {'pacote': pacote}
+    return render(request, 'choco/templates/lista_detalhe_pacote.html', contexto)
