@@ -78,6 +78,7 @@ a {
 
 #subcorpo {
 	margin: 5% 25% 0 25%;
+	overflow: auto;
 }
 
 #header {
@@ -99,4 +100,8 @@ a {
 	font-weight: bold;
 	color: green;
 	text-transform: uppercase;
+}
+
+.coluna-detalhe-pacote {
+	font-weight: bold;
 }

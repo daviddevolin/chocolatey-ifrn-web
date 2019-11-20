@@ -2,47 +2,68 @@
 {% include './header.html' %}
 <div id="subcorpo">
 
-<h2>Lista de pacotes</h2>
-	<table class="table table-striped">
-        <thead>
+<h2>Detalhes do pacote {{pacote.id_do_pacote}}</h2>
+	<table  class="table table-striped" >
           <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Título</th>
-            <th scope="col">Version</th>
-            <th scope="col">Authors</th>
-            <th scope="col">Owners</th>
-            <th scope="col">Summary</th>
-            <th scope="col">Project_URL</th>
-            <th scope="col">icon_URL</th>
-            <th scope="col">Description</th>
-            <th scope="col">Require_license_acceptance</th>
-            <th scope="col">Dependencia</th>
-            <th scope="col">Installer_type</th>
-            <th scope="col">unattended_arguments</th>
-            <th scope="col">URL</th>
-            <th scope="col">URL_64</th>
-
+            <td scope="col"  class="coluna-detalhe-pacote" >Id</td>
+            <td scope="row"> {{pacote.id_do_pacote}} </td>
           </tr>
-        </thead>
-        <tbody>
-            
-            <th scope="row"> {{pacote.id_do_pacote}}              
-                <td> {{pacote.title}} </td>
-                <td> {{pacote.version}} </td>
-                <td> {{pacote.authors}} </td>
-                <td> {{pacote.owners}} </td>
-                <td> {{pacote.summary}} </td>
-                <td> {{pacote.project_URL}} </td>
-                <td> {{pacote.icon_URL}} </td>
-                <td> {{pacote.description}} </td>
-                <td> {{pacote.require_license_acceptance}} </td>
-                <td> {{pacote.dependencia}} </td>
-                <td> {{pacote.installer_type}} </td>
-                <td> {{pacote.unattended_arguments}} </td>
-                <td> {{pacote.URL}} </td>
-                <td> {{pacote.URL_64}} </td>
-            </th>
-        </tbody>
+          <tr>
+             <td scope="col"  class="coluna-detalhe-pacote">Título</td>
+             <td> {{pacote.title}} </td>
+          </tr>
+          <tr>
+              <td scope="col"  class="coluna-detalhe-pacote">Version</td>
+              <td> {{pacote.version}} </td>
+          </tr>
+          <tr>
+              <td scope="col"  class="coluna-detalhe-pacote">Autdors</td>
+              <td> {{pacote.autdors}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Owners</td>
+              <td> {{pacote.owners}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Summary</td>
+              <td> {{pacote.summary}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Project_URL</td>
+              <td> {{pacote.project_URL}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">icon_URL</td>
+              <td> {{pacote.icon_URL}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Description</td>
+              <td> {{pacote.description}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Require_license_acceptance</td>
+              <td> {{pacote.require_license_acceptance}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Dependencia</td>
+              <td> {{pacote.dependencia}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">Installer_type</td>
+               <td> {{pacote.installer_type}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">unattended_arguments</td>
+              <td> {{pacote.unattended_arguments}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">URL</td>
+              <td> {{pacote.URL}} </td>
+          </tr>
+          <tr>
+              <td scope="col" class="coluna-detalhe-pacote">URL_64</td>
+              <td> {{pacote.URL_64}} </td>
+          </tr>
       </table>
 </div>
 {% include './footer.html' %}
